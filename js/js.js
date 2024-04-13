@@ -88,42 +88,33 @@ confirmaSenhaInput.addEventListener("keyup",() =>{
 
 
 function cadastrar(){
+    let cadastroCorreto = false
+    
+
     if(validEmail && validUser && validSenha && validConfirma){
         let listaUser = JSON.parse(localStorage.getItem('listaUser') || '[]')
 
-        msgSucess.setAttribute('style', 'display: block')
-        msgSucess.innerHTML = 'Cadastro bem sucedido...'
-        msgError.setAttribute('style', 'display: none')
-        msgError.innerHTML = ''
-
-        listaUser.push({
-            user: userInput.value,
-            email: emailInput.value,
-            senha: senhaInput.value
-        })
         
-        localStorage.setItem('listaUser', JSON.stringify(listaUser))
-
-        setTimeout(()=>{
-            window.location.href = 'index.html'
-        }, 3000)
+        
     }else{
         msgError.setAttribute('style', 'display: block')
         msgError.innerHTML = 'Preencher todos os campos corretamente.'
         msgSucess.setAttribute('style', 'display: none')
         msgSucess.innerHTML = ''
     }
-    
-}
 
-//Valida se o e-mail é valido ou não
-function isEmailValid(email){
-    const emailRegex = new RegExp(
-        /^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,}/
-    )
-    
-    if(emailRegex.test(email)){
-        return true
+    if(cadastroCorreto){
+
+        listaUser.push({
+            user: userInput.value,
+            email: emailInput.value,
+            senha: senhaInput.value
+        })
+
+        localStorage.setItem('listaUser', JSON.stringify(listaUser))
+
+        setTimeout(()=>{
+            
+        }, 5000)
     }
-    return false
 }
