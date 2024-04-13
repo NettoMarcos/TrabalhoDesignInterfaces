@@ -1,7 +1,7 @@
 let userInput = document.querySelector("#user")
 let LabelUser = document.querySelector("#labelUser")
 let validUser = false
-let userExistente = false
+
 
 let senhaInput = document.querySelector("#senha")
 let labelSenha = document.querySelector("#labelSenha")
@@ -97,7 +97,7 @@ function cadastrar(){
 
         setTimeout(()=>{
             window.location.href = 'index.html'
-        }, 2000)
+        }, 4000)
     }else{
         msgError.setAttribute('style', 'display: block')
         msgError.innerHTML = 'Preencher todos os campos corretamente.'

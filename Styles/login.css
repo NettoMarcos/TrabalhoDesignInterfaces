@@ -43,7 +43,7 @@ body{
     background-color: black;
     border-radius: 25px;
     width: 20rem;
-    height: 20rem;
+    height: 22rem;
     border-style: none;
     justify-content: center;
     align-items: center;
@@ -108,6 +108,17 @@ body{
     color: #ccbc2c;
     text-shadow: #ac0d0d -2px 1px;
     margin-top: 15px;
+}
+#msg{
+    text-align: center;
+    color:#ccbc2c;
+    background-color: #320505;
+    margin-top: 10px;
+    width: 14em;
+    padding: 5px;
+    border-radius: 4px;
+    display: none;
+   
 }
 
 
