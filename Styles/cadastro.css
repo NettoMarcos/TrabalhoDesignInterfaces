@@ -1,0 +1,142 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(to right ,rgb(5, 5, 5), rgb(9, 9, 9));
+    background-attachment: fixed;
+    color: white;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    background:black;
+    box-shadow: #151414 0 1px;
+}
+.header h1{
+    margin-top: 20px;
+    font-size: 20px;
+    color: #ccbc2c;
+    text-shadow: #ac0d0d -2px 2px;
+}
+.header a{
+    text-decoration: none;
+    color: white;
+}
+
+.cadastro{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: -5rem;
+}
+.cadastro fieldset{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    border-radius: 25px;
+    width: 22rem;
+    height: 27rem;
+    border-style: none;
+    justify-content: center;
+    align-items: center;
+    color: #ccbc2c;
+    text-shadow: #ac0d0d -2px 1px;
+    box-shadow: #320505 -0px -0px 1px 1px; 
+}
+.cadastro label{
+    margin-top: 1rem;
+    margin-bottom: 3px;
+}
+.cadastro input{
+    background-color: #fff;
+    color: #000;
+    border-radius: 20px;
+    height: 1.9rem;
+    outline: none;
+    text-align: center;
+}
+.cadastro button{
+    margin-top: 1.5rem;
+    width: 7rem;
+    padding: 5px;
+    border-radius: 10px;
+    justify-content: center;
+    border-style: none;
+    background-color: #b10d0d;
+    color: #ebd620;
+}
+.cadastro button:hover{
+    background-color: #da2424;
+    color: #ffffff;
+}
+.campos{
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+}
+.botoes{
+    display: flex;
+    flex-direction: row;
+}
+button{
+    margin: 10px;
+}
+
+.footer{
+    height: 3rem;
+    text-align: center;
+    background: black;
+    box-shadow: #151414 0 -1px;
+}
+.footer p{
+    color: #ccbc2c;
+    text-shadow: #ac0d0d -2px 1px;
+    margin-top: 15px;
+}
+
+#msgError{
+    text-align: center;
+    color:#ccbc2c;
+    background-color: #320505;
+    margin-top: 10px;
+    width: 17rem;
+    padding: 5px;
+    border-radius: 4px;
+    display: none;
+   
+}
+#msgError{
+    text-align: center;
+    color:#ccbc2c;
+    background-color: #320505;
+    margin-top: 10px;
+    width: 17rem;
+    padding: 5px;
+    border-radius: 4px;
+    display: none;
+   
+}
+#msgSuccess{
+    text-align: center;
+    color:#ccbc2c;
+    background-color: #320505;
+    margin-top: 10px;
+    width: 17rem;
+    padding: 5px;
+    border-radius: 4px;
+    display: none;
+   
+}
+
+@media(max-height: 610px){
+    .cadastro{
+        margin: 20px;
+    }
+}
