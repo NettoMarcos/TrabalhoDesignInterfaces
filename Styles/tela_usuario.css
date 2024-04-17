@@ -2,8 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #ccbc2c;
-    text-shadow: #ac0d0d -2px 1px;
+    
 }
 .container{
     min-height: 100vh;
@@ -12,8 +11,10 @@
     flex-direction: column;
     background: linear-gradient(to right ,rgb(5, 5, 5), rgb(9, 9, 9));
     background-attachment: fixed;
-    color: white;
+    color: #ccbc2c;
+    text-shadow: #ac0d0d -2px 1px;
 }
+
 .container main{
     flex: 1 1 0;
 }
@@ -24,18 +25,59 @@
     position: fixed;
     top: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    align-items: center;
     justify-content: center;
+    visibility: hidden;
 }
 .btn-in{
     display: flex;
     flex-direction: row;
     justify-content: end;
+    margin-top: 3px;
+}
+.btn-in button{
+    width: 16rem;
+    height: 2rem;
+    font-size: 0.95rem;
+    border-radius: 5px;
+    background-color: #ac0d0d;
+    color: #ccbc2c;
+    border: none;
+}
+.btn-in button:hover{
+    background-color: #da2424;
+    color: #ffffff;
 }
 .modal{
-    width: 35vw;
-    height: 20rem;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 7.6rem;
+    padding: 15px;
+    width: 25rem;
+    height: 28rem;
+    border: none;
+    background-color: black;
+    border-radius: 20px;
+    box-shadow: #320505 -0px -0px 1px 1px;
+   
+}
+.modal input{
+    margin-top: 2px;
+    border-radius: 20px;
+    width: 100%;
+    height: 1.5rem;
+    border-style: none;
+    padding: 10px;   
+}
+.campo{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.modal textarea{
+    border-radius: 10px;
+    width: 100%;
+    height: 7rem;
+
 }
 .header{
     display: flex;
@@ -61,4 +103,97 @@
 }
 .footer p{
     margin-top: 15px;
+}
+
+.contbtn{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;    
+}
+.contbtn button{
+    width: 45%;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #ac0d0d;
+    color: #ccbc2c;
+
+}
+.contbtn button:hover{
+    background-color: #da2424;
+    color: #ffffff;
+}
+.cont-filmes{ 
+    width: 100vw;
+    height: 75vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#filmes{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 80%;
+    background: white;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    gap: 20px 10px;
+    overflow-y: scroll
+
+}
+.filme{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 14px;
+    width: 30%;
+    height: 80%;
+    background: black;
+    text-align: start;
+}
+.filme h1{
+    
+    margin-bottom: 10px;
+}
+.picture{
+    width: 50%;
+}
+.picture img{
+    width: 100%;
+    height: 100%;
+}
+.info{
+    margin-top: 3px;
+}
+
+.infobtn button{
+    width: 10rem;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #ac0d0d;
+    color: #ccbc2c;
+}
+
+.infobtn button:hover{
+    background-color: #da2424;
+    color: #ffffff;
+}
+
+
+@media(max-width: 440px){
+  
+    .modal{
+        width: 90vw;
+    }
+}
+@media(max-width:659px){
+    .filme{
+        width: 90%;
+    }
 }

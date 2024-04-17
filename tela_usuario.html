@@ -13,30 +13,35 @@
     </header>
     <main>
         <section class="btn-in">
-            <button type="button" id="add-filme">Adicionar novo filme</button>
+            <button onclick="openModal()" type="button" id="add-filme" >Adicionar novo filme</button>
+        </section>
+        <section class="cont-filmes">
+            <div id="filmes">
+                
+            </div>
         </section>
         <section class="modal-container">
             <form class="form-filme">
                 <fieldset class="modal">
-                    <div>
+                    <div class="campo">
                         <label for="titulo-filme">titulo: </label>
-                        <input type="text" id="titulo-filme" name="titulo">
+                        <input type="text" id="titulo-filme" name="titulo" >
                     </div>
-                    <div>
+                    <div class="campo">
                         <label for="ano">Ano:</label>
-                        <input type="text" name="ano" id="ano">
+                        <input type="text" name="ano" id="ano" >
                     </div>
-                    <div>
+                    <div class="campo">
                         <label for="genero">Gênero: </label>
-                        <input type="text" name="genero" id="genero">
+                        <input type="text" name="genero" id="genero" >
                     </div>
-                    <div>
+                    <div class="campo">
                         <label for="diretor">Diretor: </label>
                         <input type="text" name="diretor" id="diretor">
                     </div> 
-                    <div>
-                        <label for="comentario">Comentarios: </label> 
-                        <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+                    <div class="contbtn">
+                        <button onclick="adicionar()" type="button">Adicionar</button>
+                        <button onclick="cancelar()" type="reset">Cancelar</button>
                     </div>
                 </fieldset>
             </form>
