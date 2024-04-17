@@ -29,6 +29,16 @@ function conectar(){
         if(userInput.value == userValid.user && senhaInput.value == userValid.senha){
             msg.setAttribute('style', 'display: block')
             msg.innerHTML = 'Conectando...'
+
+            
+            setTimeout(()=>{
+                window.location.href = 'tela_usuario.html'
+            }, 1000)
+            let token = Math.random().toString(16).substring(2)
+            sessionStorage.setItem('token', token)
+
+            sessionStorage.setItem('userLogado', JSON.stringify(userValid.user))
+
         } else {   
             msg.setAttribute('style', 'display: block')
             msg.innerHTML = 'Usuário ou senha incorretos'

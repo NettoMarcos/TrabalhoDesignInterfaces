@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Styles/tela_usuario.css">
+</head>
+<body class="container">
+    <header class="header">
+        <a href="index.html"><img src="Images/Logo.png" alt="Logo do site" class="logo" width="90px" height="70px"></a>
+        <a href="index.html"><h1 id="titulo">My Movie List</h1></a>
+    </header>
+    <main>
+        <section class="btn-in">
+            <button type="button" id="add-filme">Adicionar novo filme</button>
+        </section>
+        <section class="modal-container">
+            <form class="form-filme">
+                <fieldset class="modal">
+                    <div>
+                        <label for="titulo-filme">titulo: </label>
+                        <input type="text" id="titulo-filme" name="titulo">
+                    </div>
+                    <div>
+                        <label for="ano">Ano:</label>
+                        <input type="text" name="ano" id="ano">
+                    </div>
+                    <div>
+                        <label for="genero">Gênero: </label>
+                        <input type="text" name="genero" id="genero">
+                    </div>
+                    <div>
+                        <label for="diretor">Diretor: </label>
+                        <input type="text" name="diretor" id="diretor">
+                    </div> 
+                    <div>
+                        <label for="comentario">Comentarios: </label> 
+                        <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">    
+        <p>&copy; 2024 - Trabalho Design de Interfaces</p> 
+    </footer>
+</body>
+<script src="js/tela_usuario.js"></script>
+</html>
